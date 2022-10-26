@@ -1,0 +1,11 @@
+.DS_Store
+/public/sysConfig.js
+/src/cucc_kite_comp
+/src/kiteSec
+/node_modules
+/build
+
+
+.vscode
+.idea
+node_modules

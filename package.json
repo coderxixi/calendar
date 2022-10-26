@@ -1,0 +1,24 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderXixi/calendar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderXixi/calendar/issues"
+  },
+  "homepage": "https://github.com/coderXixi/calendar#readme",
+  "devDependencies": {
+    "sass": "^1.55.0",
+    "vite": "^3.1.8"
+  }
+}
