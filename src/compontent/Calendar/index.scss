@@ -1,0 +1,29 @@
+.my-calendar{
+  width: 324px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  color: #666;
+  border-collapse:collapse;
+  tr{
+   
+    height: 38px;
+  }
+  th{
+    font-weight: normal;
+  }
+  td{
+    text-align: center;
+  }
+  .day{
+    &.rest-day{
+      color: #ccc;
+    }
+    &.current-day{
+      cursor: pointer;
+    }
+    &.current{
+      color: orange;
+      font-weight: bold;
+    }
+  }
+}

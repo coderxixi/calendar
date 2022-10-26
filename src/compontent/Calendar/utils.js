@@ -18,7 +18,7 @@ export function getLastMonthRestDays(year, month) {
   //获取上个月的最后一天
   let lastDate = getMonthDayCount(year, month - 1);
   const restDays = [];
-  while (restDays.length < days) {
+  while (restDays.length > days) {
     restDays.push(lastDate--)
   }
 
@@ -43,8 +43,8 @@ export function getNextMonthRestDays(year, month) {
 
 //工具函数转换时间戳
 export function getDateInfo(timeStamp){
-  var date=  timeStamp? new Date(timeStamp):new Date();
-  return [date.getFullYear(),date.getMonth()+1,date.getDate]
+  var date= timeStamp? new Date(timeStamp):new Date();
+  return [date.getFullYear(),date.getMonth()+1,date.getDate()]
 
 }
 
