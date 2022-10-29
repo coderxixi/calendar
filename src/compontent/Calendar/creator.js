@@ -1,5 +1,5 @@
 import { WEEK_DAYS } from "./config"
-import { getLastMonthRestDays, getMonthDayCount, getDateInfo, getNextMonthRestDays } from "./utils"
+import { getLastMonthRestDays, getMonthDayCount, getDateInfo, getNextMonthRestDays, getFormatDate } from "./utils"
 
 export function createWeekDaysNode() {
   const oTr = document.createElement('tr');
@@ -71,6 +71,7 @@ function creatCurrentDaysTd(currenDayCount, year, month) {
       oTd.className = 'day current-day';
     }
     oTd.innerText = i
+    oTd.setAttribute('data-date',getFormatDate(year, month,i))
     trArr.push(oTd)
   }
 

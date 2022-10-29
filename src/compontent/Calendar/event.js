@@ -1,7 +1,7 @@
 let target = null;
 
 let flag = null;
-export default (container) => {
+export default (container,handler) => {
 
   container.onclick = function (e) {
 
@@ -13,8 +13,10 @@ export default (container) => {
       }
        flag=tar
       tar.className += ' selected';
-      console.log('className', className);
+      handler&&handler(tar.dataset.date)
+      console.log('className', className,tar.dataset.date);
     }
+  
   }
 
 
