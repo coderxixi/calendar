@@ -60,7 +60,7 @@ function createRestDaysTds(restDays) {
 function creatCurrentDaysTd(currenDayCount, year, month) {
 
   let trArr = [];
-  const [currentYear, currentMonth, currenDay] = getDateInfo(year, month);
+  const [currentYear, currentMonth, currenDay] = getDateInfo();
 
   console.log(currentYear, currentMonth, currenDay);
   for (let i = 1; i <= currenDayCount; i++) {

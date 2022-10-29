@@ -1,22 +1,21 @@
-let target=null;
+let target = null;
 
+let flag = null;
+export default (container) => {
 
-export default (container)=>{
+  container.onclick = function (e) {
 
- 
-  container.addEventListenter('click',(e)=>{
-  
-    console.log(container);
-    const tar=e.target;
-    const className=tar.className
-    console.log('e',e);
-    if(className.includes('current-day')){
-      if(target){
-        target.className= target.className.replace(' selected','')
+    const tar = e.target
+    const className = tar.className;
+    if (className.includes('current-day')) {
+      if (flag) {
+        flag.className = flag.className.replace(' selected', '')
       }
-      target=tar
-      tar.className=' selected'
-      console.log('6666');
+       flag=tar
+      tar.className += ' selected';
+      console.log('className', className);
     }
-  },false);
+  }
+
+
 }
